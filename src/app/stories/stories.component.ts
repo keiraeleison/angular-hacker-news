@@ -17,7 +17,7 @@ export class StoriesComponent implements OnInit {
   ngOnInit() {
     this._hackerNewsAPIService.fetchStories()
       .subscribe(
-        items => this.items = items),
-        error => console.log('Error fetching stories');
+        items => this.items = items,
+        error => console.log('Error fetching stories'));
   }
 }
